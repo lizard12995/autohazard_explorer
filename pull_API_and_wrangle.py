@@ -289,4 +289,10 @@ df["time_to_resolution"]=df["time_to_resolution"].dt.days
 f = [c for c in df.columns if c not in ['mean_time_to_investigation','time_to_resolution']]
 df[f] = df[f].fillna(0)
 
+#export as csv
 df.to_csv('upd_li_props.csv', index = False)
+
+df = gpd.GeoDataFrame(df, crs="EPSG:4326").to_crs(epsg=3857)
+
+#export as geojson
+df.to_file("upd_li_props.geojson", driver='GeoJSON')

@@ -2,7 +2,8 @@ name: update
 
 on:
   schedule:
-    - cron: '@weekly'
+    #- cron: '@weekly'
+    - cron: '50 3 * * *'
   push:
     paths:
       - .github/workflows/update.yml

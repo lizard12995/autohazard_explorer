@@ -1,0 +1,46 @@
+name: li_api_pull
+
+on:
+  schedule:
+    - cron: '@weekly'
+  push:
+    paths:
+      - .github/workflows/update.yml
+
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: musa-550-fall-2022
+          environment-file: environment.yml
+          auto-activate-base: false
+          python-version: 3.9
+      - name: Conda info
+        shell: bash -l {0}
+        run: conda info
+      - name: Conda list
+        shell: bash -l {0}
+        run: conda list
+      - name: Run update
+        shell: bash -l {0}
+        run: python Actions.py
+
+      - name: Commit files
+        continue-on-error: true
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -a -m "Add daily update changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

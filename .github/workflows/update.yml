@@ -14,10 +14,10 @@ jobs:
     name: Update
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
+      - uses: actions/checkout@v2
+          with:
+            persist-credentials: false
+            fetch-depth: 0
       - uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: musa-550-fall-2022

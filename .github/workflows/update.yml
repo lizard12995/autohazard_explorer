@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          with:
+         with:
             persist-credentials: false
             fetch-depth: 0
       - uses: conda-incubator/setup-miniconda@v2
-        with:
+         with:
           activate-environment: musa-550-fall-2022
           environment-file: environment.yml
           auto-activate-base: false

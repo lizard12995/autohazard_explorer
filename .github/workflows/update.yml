@@ -1,4 +1,4 @@
-name: li_api_pull
+name: update
 
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
         run: conda list
       - name: Run update
         shell: bash -l {0}
-        run: python Actions.py
+        run: python pull_API_and_wrangle.py
 
       - name: Commit files
         continue-on-error: true

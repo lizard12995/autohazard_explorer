@@ -4,8 +4,6 @@ pandas
 numpy
 holoviews
 esri2gpd
-bokeh.models
-holoviews.element.tiles
 colorcet
 panel
 param

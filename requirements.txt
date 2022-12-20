@@ -9,6 +9,6 @@ pandas==1.5.2
 seaborn==0.12.1
 cenpy
 jupyter
-GeoViews
+geoviews
 pyproj
 cartopy

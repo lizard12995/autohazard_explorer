@@ -5,6 +5,8 @@
 #    pip-compile
 #
 
+cenpy
+
 jupyter
 
 arcgis2geojson==2.0.1

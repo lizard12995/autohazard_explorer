@@ -2,7 +2,6 @@ carto2gpd
 geopandas
 pandas
 numpy
-hvplot.pandas
 holoviews
 esri2gpd
 bokeh.models

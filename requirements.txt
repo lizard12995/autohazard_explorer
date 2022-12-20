@@ -10,3 +10,7 @@ seaborn==0.12.1
 pandas[hvplot]
 cenpy
 jupyter
+
+geoviews
+pyproj
+cartopy

@@ -261,7 +261,6 @@ summary_LIviolation = summary_LIviolation.merge(summary_LIviolation2,how="left")
 # Pulling it all together
 
 OPA = pd.concat([acct_lic, props_LI_c]).dropna(subset=["geometry"]).fillna(0)
-OPA["License"] = np.where(OPA["opa_account_num"].isin(acct_lic), "License", "No license")
 
 #Reorder columns
 OPA = OPA[['opa_account_num', 'opa_owner','business_name', 'address','License', 'geometry', 'Active', 'Closed', 'Expired',

@@ -7,4 +7,5 @@ esri2gpd
 colorcet
 panel
 param
-io
+StringIO
+bokeh

@@ -4,6 +4,9 @@
 #
 #    pip-compile
 #
+
+jupyter
+
 arcgis2geojson==2.0.1
     # via esri2gpd
 attrs==22.1.0

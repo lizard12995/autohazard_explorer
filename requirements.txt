@@ -10,5 +10,6 @@ seaborn==0.12.1
 cenpy
 jupyter
 geoviews
+geos
 pyproj
 cartopy

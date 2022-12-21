@@ -6,7 +6,6 @@ dependencies:
   - python=3.9
   - jupyter
   - cenpy
-  - pyepsg=0.4.0
   - cartopy=0.21
   - geoviews=1.9.5
   - mapclassify=2.4.3
@@ -51,12 +50,13 @@ dependencies:
   - urllib3=1.26.13
   - webencodings=0.5.1
   - zipp=3.11.0
+  - pillow=9.3.0
+  - pyct=0.4.8
+  - pyviz-comms=2.2.1
   - pip
   - pip:
       - carto2gpd==1.0.12
       - esri2gpd==1.0.13
       - arcgis2geojson==2.0.1
-      - pillow==9.3.0
-      - pyct==0.4.8
-      - pyviz-comms==2.2.1
+      
 

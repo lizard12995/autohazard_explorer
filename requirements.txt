@@ -6,7 +6,7 @@
 #
 
 jupyter
-
+pyproj
 cenpy
 
 arcgis2geojson==2.0.1

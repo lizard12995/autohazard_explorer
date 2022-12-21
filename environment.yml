@@ -6,6 +6,9 @@ dependencies:
   - python=3.9
   - jupyter
   - cenpy
+  - cartopy
+  - geoviews
+  - pyproj
   - attrs=22.1.0
   - bleach=5.0.1
   - bokeh=2.4.3

@@ -6,7 +6,7 @@ dependencies:
   - python=3.9
   - jupyter
   - cenpy
-  - cartopy=0.20.3
+  - cartopy
   - geoviews=1.9.5
   - attrs=22.1.0
   - bleach=5.0.1

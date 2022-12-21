@@ -6,7 +6,10 @@
 #
 
 jupyter
-
+pyproj
+geoviews
+cartopy
+geos
 cenpy
 
 arcgis2geojson==2.0.1

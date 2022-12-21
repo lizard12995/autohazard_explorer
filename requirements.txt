@@ -9,7 +9,6 @@ jupyter
 geos
 pyproj
 geoviews
-cartopy
 cenpy
 
 arcgis2geojson==2.0.1

@@ -54,5 +54,5 @@ dependencies:
       - arcgis2geojson==2.0.1
       - pillow==9.3.0
       - pyct==0.4.8
-      - pyviz-comms=2.2.1
+      - pyviz-comms==2.2.1
 

@@ -263,7 +263,7 @@ summary_LIviolation = summary_LIviolation.merge(summary_LIviolation2,how="left")
 OPA = pd.concat([acct_lic, props_LI_c]).dropna(subset=["geometry"]).fillna(0)
 
 #Reorder columns
-OPA = OPA[['opa_account_num', 'opa_owner','business_name', 'address','License', 'geometry', 'Active', 'Closed', 'Expired',
+OPA = OPA[['opa_account_num', 'opa_owner','business_name', 'address', 'geometry', 'Active', 'Closed', 'Expired',
        'Inactive', 'Revoked','Active_TF',
        'Motor Vehicle Repair / Retail Mobile Dispensing_Inactive',
        'Motor Vehicle Repair / Retail Mobile Dispensing_Active',

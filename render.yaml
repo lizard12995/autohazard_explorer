@@ -6,6 +6,6 @@ services:
     plan: free 
     branch: main
     rootDir: webdis
-    dockerCommand: /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.herokuapp.com
+    dockerCommand: /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
     numInstances: 1
     healthCheckPath: /

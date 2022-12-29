@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: webdis
+    name: autohazard-explorer
     env: docker
     region: ohio 
     plan: free 

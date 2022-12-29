@@ -6,6 +6,6 @@ services:
     plan: free 
     branch: main
     rootDir: webdis
-    dockerCommand: ./webdis.sh 
+    dockerCommand:
     numInstances: 1
     healthCheckPath: /

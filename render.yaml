@@ -2,7 +2,8 @@ services:
   - type: web
     name: autohazard-explorer
     env: docker
-    region: ohio 
+    region: ohio
+    repo: https://github.com/lizard12995/autohazard_explorer.git
     plan: free 
     branch: main
     rootDir: autohazard-explorer

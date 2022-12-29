@@ -2,7 +2,6 @@ services:
   - type: web
     name: webdis
     env: docker
-    repo: https://github.com/render-examples/webdis.git # optional
     region: ohio 
     plan: standard 
     branch: main
@@ -10,15 +9,3 @@ services:
     dockerCommand: ./webdis.sh 
     numInstances: 3 # optional (defaults to 1)
     healthCheckPath: /
-    envVars:
-      - key: REDIS_HOST
-        fromService:
-          type: redis
-          name: lightning
-          property: host # available properties are listed below
-      - key: REDIS_PORT
-        fromService:
-          type: redis
-          name: lightning
-          property: port
-      - fromGroup: conc-settings

@@ -7,5 +7,5 @@ services:
     branch: main
     rootDir: webdis
     dockerCommand: ./webdis.sh 
-    numInstances: 3 # optional (defaults to 1)
+    numInstances: 1
     healthCheckPath: /

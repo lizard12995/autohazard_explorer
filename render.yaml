@@ -5,7 +5,7 @@ services:
     region: ohio 
     plan: free 
     branch: main
-    rootDir: autohazard_explorer
+    rootDir: autohazard-explorer
     dockerCommand: /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
     numInstances: 1
     healthCheckPath: /

@@ -7,8 +7,7 @@ services:
     plan: free 
     branch: main
     rootDir:
-    dockerCommand: /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb 
+    dockerCommand: panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
     numInstances: 1
 
-
-# --allow-websocket-origin=autohazard-explorer.onrender.com
+#/env/bin/

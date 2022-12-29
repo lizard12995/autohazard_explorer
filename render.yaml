@@ -3,7 +3,7 @@ services:
     name: webdis
     env: docker
     region: ohio 
-    plan: standard 
+    plan: free 
     branch: main
     rootDir: webdis
     dockerCommand: ./webdis.sh 

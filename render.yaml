@@ -6,7 +6,7 @@ services:
     repo: https://github.com/lizard12995/autohazard_explorer.git
     plan: free 
     branch: main
-    rootDir: autohazard-explorer
+    rootDir:
     dockerCommand: /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
     numInstances: 1
     healthCheckPath: /

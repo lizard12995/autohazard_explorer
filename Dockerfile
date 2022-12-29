@@ -8,4 +8,4 @@ COPY . /pkg
 WORKDIR /pkg
 RUN ls
 
-CMD /env/bin/panel serve --address="0.0.0.0" --port=8000 app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
+CMD /env/bin/panel serve --address="0.0.0.0" --port=$PORT app.ipynb --allow-websocket-origin=autohazard-explorer.onrender.com
